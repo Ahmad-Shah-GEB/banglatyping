@@ -513,6 +513,16 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+                } else if (buffer.endsWith("LA")) {
+                    const updatedText = currentInput.slice(0, -2) + "র্ধ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("LZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "ধ্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
                 } else if (buffer.endsWith("LZ")) {
                     const updatedText = currentInput.slice(0, -2) + "ধ্য";
                     textBox.value = updatedText;
