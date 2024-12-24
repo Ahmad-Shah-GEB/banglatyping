@@ -38,6 +38,28 @@
                 background-color: #d32f2f;
             }
 
+            #keyboardLayout {
+                margin-top: 20px;
+                max-width: 100%;
+                height: auto;
+                border: 2px solid #ddd;
+                border-radius: 10px;
+                display: none; /* Initially hidden */
+            }
+            #toggleButton {
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007BFF;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #toggleButton:hover {
+                background-color: #0056b3;
+            }
+
         }
         textarea {
             width: 100%;
@@ -1584,6 +1606,18 @@
                 textBox.value = ""; // Clear the text
             });
 
+            document.getElementById("toggleButton").addEventListener("click", () => {
+                const layoutImage = document.getElementById("keyboardLayout");
+                const toggleButton = document.getElementById("toggleButton");
+
+                if (layoutImage.style.display === "none") {
+                    layoutImage.style.display = "block";
+                    toggleButton.textContent = "Hide Layout";
+                } else {
+                    layoutImage.style.display = "none";
+                    toggleButton.textContent = "Show Layout";
+                }
+            });
 
         });
     </script>
@@ -1592,6 +1626,7 @@
     <textarea id="banglaInput" placeholder="Start typing..."></textarea>
     <button id="copyButton">Copy Text</button>
     <button id="cleartext">Delete All Text</button>
-    <img src="Images/unibijoy-keyboard.png" alt="Unibijoy Keyboard Layout">
+    <button id="toggleButton">Show Layout</button>
+    <img id="keyboardLayout" src="Images/unibijoy-keyboard.png" alt="Unibijoy Keyboard Layout">
 </body>
 </html>
