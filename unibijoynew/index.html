@@ -403,6 +403,16 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+                } else if (buffer.endsWith("yZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "চ্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("UZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "ছ্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
                 } else if (buffer.endsWith("uZ")) {
                     const updatedText = currentInput.slice(0, -2) + "জ্য";
                     textBox.value = updatedText;
