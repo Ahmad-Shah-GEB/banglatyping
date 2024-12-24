@@ -1514,6 +1514,12 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 }
 
+                  else if (buffer.endsWith("g")) {
+                    const updatedText = currentInput.slice(0, -1) + "্";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                }
+
                 else {
                     const matchedKey = Object.keys(vowelMap).find(key => buffer.endsWith(key));
                     if (matchedKey) {
