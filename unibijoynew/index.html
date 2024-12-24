@@ -51,7 +51,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const vowelMap = {
-                "F": "অ",
+
             };
 
             const charMap = {
@@ -300,6 +300,16 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+                } else if (buffer.endsWith("FZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "অ্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("F")) {
+                    const updatedText = currentInput.slice(0, -1) + "অ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
                 } else if (buffer.endsWith("gf")) {
                     const updatedText = currentInput.slice(0, -2) + "আ";
                     textBox.value = updatedText;
@@ -478,6 +488,17 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+
+                } else if (buffer.endsWith("BA")) {
+                    const updatedText = currentInput.slice(0, -2) + "র্ণ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("BZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "ণ্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
                 } else if (buffer.endsWith("kz")) {
                     const updatedText = currentInput.slice(0, -2) + "ত্র";
                     textBox.value = updatedText;
@@ -528,8 +549,8 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
-                } else if (buffer.endsWith("LZ")) {
-                    const updatedText = currentInput.slice(0, -2) + "ধ্য";
+                } else if (buffer.endsWith("Lz")) {
+                    const updatedText = currentInput.slice(0, -2) + "ধ্র";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
@@ -537,6 +558,22 @@
                     const updatedText = currentInput.slice(0, -2) + "ধ্য";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("bA")) {
+                    const updatedText = currentInput.slice(0, -2) + "র্ন";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("nz")) {
+                    const updatedText = currentInput.slice(0, -2) + "ন্র";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("nZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "ন্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
 
                 } else if (buffer.endsWith("rz")) {
                     const updatedText = currentInput.slice(0, -2) + "প্র";
