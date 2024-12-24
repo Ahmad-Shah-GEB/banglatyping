@@ -292,12 +292,7 @@
 
                 buffer += newChar;
 
-                if (buffer.endsWith("jf")) {
-                    const updatedText = currentInput.slice(0, -2) + "কা";
-                    textBox.value = updatedText;
-                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
-                    buffer = "";
-                } else if (buffer.endsWith("q")) {
+                if (buffer.endsWith("q")) {
                     const updatedText = currentInput.slice(0, -1) + "ং";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
