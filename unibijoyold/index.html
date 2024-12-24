@@ -834,6 +834,38 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
 
+              } else if (buffer.endsWith("dLz")) {
+                    const updatedText = currentInput.slice(0, -3) + "ধ্রি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("cLz")) {
+                    const updatedText = currentInput.slice(0, -3) + "ধ্রে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("Lz")) {
+                    const updatedText = currentInput.slice(0, -2) + "ধ্র";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+
+                } else if (buffer.endsWith("dLA")) {
+                    const updatedText = currentInput.slice(0, -3) + "র্ধি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("cLA")) {
+                    const updatedText = currentInput.slice(0, -3) + "র্ধে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("LA")) {
+                    const updatedText = currentInput.slice(0, -2) + "র্ধ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+
                 } else if (buffer.endsWith("dLZ")) {
                     const updatedText = currentInput.slice(0, -3) + "ধ্যি";
                     textBox.value = updatedText;
