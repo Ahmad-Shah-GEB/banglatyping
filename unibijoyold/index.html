@@ -51,7 +51,6 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const vowelMap = {
-                "F": "অ",
                 "gd": "ই",
                 "gc": "এ",
                 "gC": "ঐ",
@@ -300,6 +299,16 @@
                     buffer = "";
                 } else if (buffer.endsWith("q")) {
                     const updatedText = currentInput.slice(0, -1) + "ং";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("FZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "অ্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("F")) {
+                    const updatedText = currentInput.slice(0, -1) + "অ";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
@@ -786,6 +795,38 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
 
+
+                } else if (buffer.endsWith("dBA")) {
+                    const updatedText = currentInput.slice(0, -3) + "র্ণি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("cBA")) {
+                    const updatedText = currentInput.slice(0, -3) + "র্ণে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("BA")) {
+                    const updatedText = currentInput.slice(0, -2) + "র্ণ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+
+                } else if (buffer.endsWith("dBZ")) {
+                    const updatedText = currentInput.slice(0, -3) + "ণ্যি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("cBZ")) {
+                    const updatedText = currentInput.slice(0, -3) + "ণ্যে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("BZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "ণ্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
                 } else if (buffer.endsWith("dkz")) {
                     const updatedText = currentInput.slice(0, -3) + "ত্রি";
                     textBox.value = updatedText;
@@ -975,6 +1016,52 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+              } else if (buffer.endsWith("dmz")) {
+                    const updatedText = currentInput.slice(0, -3) + "ন্রি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("cmz")) {
+                    const updatedText = currentInput.slice(0, -3) + "ন্রে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("mz")) {
+                    const updatedText = currentInput.slice(0, -2) + "ন্র";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+
+                } else if (buffer.endsWith("dmA")) {
+                    const updatedText = currentInput.slice(0, -3) + "র্নি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("cmA")) {
+                    const updatedText = currentInput.slice(0, -3) + "র্নে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("mA")) {
+                    const updatedText = currentInput.slice(0, -2) + "র্ন";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+
+                } else if (buffer.endsWith("dmZ")) {
+                    const updatedText = currentInput.slice(0, -3) + "ন্যি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("cmZ")) {
+                    const updatedText = currentInput.slice(0, -3) + "ন্যে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+                } else if (buffer.endsWith("mZ")) {
+                    const updatedText = currentInput.slice(0, -2) + "ন্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
                 } else if (buffer.endsWith("drz")) {
                     const updatedText = currentInput.slice(0, -3) + "প্রি";
