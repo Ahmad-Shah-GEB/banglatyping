@@ -1542,6 +1542,49 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 }
 
+                else if (buffer.endsWith("0")) {
+                    const updatedText = currentInput.slice(0, -1) + "০";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("1")) {
+                    const updatedText = currentInput.slice(0, -1) + "১";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("2")) {
+                    const updatedText = currentInput.slice(0, -1) + "২";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("3")) {
+                    const updatedText = currentInput.slice(0, -1) + "৩";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("4")) {
+                    const updatedText = currentInput.slice(0, -1) + "৪";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("5")) {
+                    const updatedText = currentInput.slice(0, -1) + "৫";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("6")) {
+                    const updatedText = currentInput.slice(0, -1) + "৬";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("7")) {
+                    const updatedText = currentInput.slice(0, -1) + "৭";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("8")) {
+                    const updatedText = currentInput.slice(0, -1) + "৮";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("9")) {
+                    const updatedText = currentInput.slice(0, -1) + "৯";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                }
+
+
                 else {
                     const matchedKey = Object.keys(vowelMap).find(key => buffer.endsWith(key));
                     if (matchedKey) {
