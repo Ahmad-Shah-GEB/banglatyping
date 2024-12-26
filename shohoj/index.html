@@ -9,7 +9,6 @@
             font-family: Arial, sans-serif;
             margin: 20px;
 
-            
             button#copyButton {
                 background-color: #29BE6A;
                 color: white;
@@ -406,12 +405,12 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
-                } else if (buffer.endsWith("Yz")) {
+                } else if (buffer.endsWith("Kz")) {
                     const updatedText = currentInput.slice(0, -2) + "খ্র";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
-                } else if (buffer.endsWith("YZ")) {
+                } else if (buffer.endsWith("KZ")) {
                     const updatedText = currentInput.slice(0, -2) + "খ্য";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
@@ -422,7 +421,7 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
-                } else if (buffer.endsWith("Xz")) {
+                } else if (buffer.endsWith("Vz")) {
                     const updatedText = currentInput.slice(0, -2) + "ঘ্র";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
@@ -432,7 +431,7 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
-                } else if (buffer.endsWith("JZ")) {
+                } else if (buffer.endsWith("CZ")) {
                     const updatedText = currentInput.slice(0, -2) + "ছ্য";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
@@ -469,7 +468,7 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
-                } else if (buffer.endsWith("ez")) {
+                } else if (buffer.endsWith("dz")) {
                     const updatedText = currentInput.slice(0, -2) + "ড্র";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
@@ -595,6 +594,10 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+                  } else if (buffer.endsWith("WZ")) {
+                      const updatedText = currentInput.slice(0, -2) + "য়্য";
+                      textBox.value = updatedText;
+                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
                 } else if (buffer.endsWith("lZ")) {
                     const updatedText = currentInput.slice(0, -2) + "ল্য";
@@ -1018,6 +1021,6 @@
     <button id="copyButton">Copy Text</button>
     <button id="cleartext">Delete All Text</button>
     <button id="toggleButton">Show Layout</button>
-    <img id="keyboardLayout" src="Images/shohoj-layout.png" alt="Shohoj Keyboard Layout">
+    <img id="keyboardLayout" src="Images/shohoj-layout.png" alt="Unibijoy Keyboard Layout">
 </body>
 </html>
