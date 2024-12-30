@@ -378,6 +378,12 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+                } else if (buffer.endsWith("cvgx")) {
+                    const updatedText = currentInput.slice(0, -5) + "রেও";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+
                 } else if (buffer.endsWith("rzZ")) {
                     const updatedText = currentInput.slice(0, -4) + "প্র্য";
                     textBox.value = updatedText;
@@ -3987,8 +3993,8 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 }
 
-                  else if (buffer.endsWith("vg")) {
-                    const updatedText = currentInput.slice(0, -2) + "র্";
+                  else if (buffer.endsWith("g")) {
+                    const updatedText = currentInput.slice(0, -1) + "্";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 }
