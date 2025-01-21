@@ -378,6 +378,40 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
+                } else if (buffer.endsWith("crgk")) {
+                    const updatedText = currentInput.slice(0, -4) + "প্তে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+
+                } else if (buffer.endsWith("drgk")) {
+                    const updatedText = currentInput.slice(0, -4) + "প্তি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+
+                } else if (buffer.endsWith("rgk")) {
+                    const updatedText = currentInput.slice(0, -3) + "প্ত";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
+                } else if (buffer.endsWith("crgb")) {
+                    const updatedText = currentInput.slice(0, -4) + "প্নে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+
+                } else if (buffer.endsWith("drgb")) {
+                    const updatedText = currentInput.slice(0, -4) + "প্নি";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+
+                } else if (buffer.endsWith("rgb")) {
+                    const updatedText = currentInput.slice(0, -3) + "প্ন";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
                 } else if (buffer.endsWith("cjgNZ")) {
                     const updatedText = currentInput.slice(0, -5) + "ক্ষ্যে";
                     textBox.value = updatedText;
@@ -905,11 +939,19 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                     buffer = "";
+
+                } else if (buffer.endsWith("cNgtZ")) {
+                    const updatedText = currentInput.slice(0, -5) + "ষ্ট্যে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+
                 } else if (buffer.endsWith("ctZ")) {
                     const updatedText = currentInput.slice(0, -3) + "ট্যে";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
-                    buffer = "";
+
+
+
                 } else if (buffer.endsWith("tZ")) {
                     const updatedText = currentInput.slice(0, -2) + "ট্য";
                     textBox.value = updatedText;
@@ -3500,6 +3542,10 @@
                     const updatedText = currentInput.slice(0, -2) + "কে";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("Cj")) {
+                    const updatedText = currentInput.slice(0, -2) + "কৈ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("j")) {
                     const updatedText = currentInput.slice(0, -1) + "ক";
                     textBox.value = updatedText;
@@ -3515,6 +3561,10 @@
                     const updatedText = currentInput.slice(0, -2) + "খে";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("CJ")) {
+                    const updatedText = currentInput.slice(0, -2) + "খৈ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("J")) {
                     const updatedText = currentInput.slice(0, -1) + "খ";
                     textBox.value = updatedText;
@@ -3526,6 +3576,10 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("co")) {
                     const updatedText = currentInput.slice(0, -2) + "গে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("Co")) {
+                    const updatedText = currentInput.slice(0, -2) + "গৈ";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("o")) {
@@ -3599,6 +3653,10 @@
                     const updatedText = currentInput.slice(0, -2) + "জে";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("Cu")) {
+                    const updatedText = currentInput.slice(0, -2) + "জৈ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("u")) {
                     const updatedText = currentInput.slice(0, -1) + "জ";
                     textBox.value = updatedText;
@@ -3630,6 +3688,10 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("ct")) {
                     const updatedText = currentInput.slice(0, -2) + "টে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("Ct")) {
+                    const updatedText = currentInput.slice(0, -2) + "টৈ";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("t")) {
@@ -3731,6 +3793,10 @@
                     const updatedText = currentInput.slice(0, -2) + "দে";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("Cl")) {
+                    const updatedText = currentInput.slice(0, -2) + "দৈ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("l")) {
                     const updatedText = currentInput.slice(0, -1) + "দ";
                     textBox.value = updatedText;
@@ -3742,6 +3808,10 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("cL")) {
                     const updatedText = currentInput.slice(0, -2) + "ধে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("CL")) {
+                    const updatedText = currentInput.slice(0, -2) + "ধৈ";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("L")) {
@@ -3827,6 +3897,10 @@
                      const updatedText = currentInput.slice(0, -2) + "ভে";
                      textBox.value = updatedText;
                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("CH")) {
+                    const updatedText = currentInput.slice(0, -2) + "ভৈ";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                  } else if (buffer.endsWith("H")) {
                      const updatedText = currentInput.slice(0, -1) + "ভ";
                      textBox.value = updatedText;
