@@ -418,6 +418,12 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                     buffer = "";
 
+                } else if (buffer.endsWith("ngtzZ")) {
+                    const updatedText = currentInput.slice(0, -6) + "স্ট্র্য";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                    buffer = "";
+
                 } else if (buffer.endsWith("cngtz")) {
                     const updatedText = currentInput.slice(0, -5) + "স্ট্রে";
                     textBox.value = updatedText;
@@ -3988,6 +3994,10 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("cM")) {
                     const updatedText = currentInput.slice(0, -2) + "শে";
+                    textBox.value = updatedText;
+                    textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                } else if (buffer.endsWith("CM")) {
+                    const updatedText = currentInput.slice(0, -2) + "শৈ";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("M")) {
