@@ -465,6 +465,34 @@
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                     buffer = "";
 
+                  } else if (buffer.endsWith("tzZ")) {
+                      const updatedText = currentInput.slice(0, -4) + "ট্র্য";
+                      textBox.value = updatedText;
+                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                      buffer = "";
+                  } else if (buffer.endsWith("hgVZ")) {
+                      const updatedText = currentInput.slice(0, -4) + "ব্ল্য";
+                      textBox.value = updatedText;
+                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                      buffer = "";
+
+                  } else if (buffer.endsWith("dbgh")) {
+                      const updatedText = currentInput.slice(0, -4) + "ন্বি";
+                      textBox.value = updatedText;
+                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                      buffer = "";
+                  } else if (buffer.endsWith("cbgh")) {
+                      const updatedText = currentInput.slice(0, -4) + "ন্বে";
+                      textBox.value = updatedText;
+                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                      buffer = "";
+
+                  } else if (buffer.endsWith("bgh")) {
+                      const updatedText = currentInput.slice(0, -3) + "ন্ব";
+                      textBox.value = updatedText;
+                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                      buffer = "";
+
                 } else if (buffer.endsWith("ngjz")) {
                     const updatedText = currentInput.slice(0, -4) + "স্ক্র";
                     textBox.value = updatedText;
@@ -1558,7 +1586,7 @@
                     const updatedText = currentInput.slice(0, -3) + "ব্ল";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
-                    buffer = "";
+
 
                 } else if (buffer.endsWith("ckgmZ")) {
                     const updatedText = currentInput.slice(0, -5) + "ত্ম্যে";
@@ -3786,6 +3814,10 @@
                     const updatedText = currentInput.slice(0, -2) + "থে";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
+                  } else if (buffer.endsWith("CK")) {
+                      const updatedText = currentInput.slice(0, -2) + "থৈ";
+                      textBox.value = updatedText;
+                      textBox.selectionStart = textBox.selectionEnd = updatedText.length;
                 } else if (buffer.endsWith("K")) {
                     const updatedText = currentInput.slice(0, -1) + "থ";
                     textBox.value = updatedText;
