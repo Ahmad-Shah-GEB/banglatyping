@@ -172,7 +172,7 @@
                 "MZ": "শ্য", "iMZ": "শ্যি", "eMZ": "শ্যে",
                 "jgN": "ক্ষ",  "ijgN": "ক্ষি",  "ejgN": "ক্ষে",
                 "jgNZ": "ক্ষ্য", "jgNZf": "ক্ষ্যা",
-                "iZ": "হ্য", "iiZ": "হ্যি", "eiZ": "হ্যে",
+                "hZ": "হ্য", "ihZ": "হ্যি", "ehZ": "হ্যে",
                 "jgj": "ক্ক", "ijgj": "ক্কি", "ejgj": "ক্কে",
                 "jgk": "ক্ত", "ijgk": "ক্তি", "ejgk": "ক্তে",
                 "jgt": "ক্ট", "ijgt": "ক্টি", "ejgt": "ক্টে",
@@ -630,7 +630,7 @@
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
 
-                } else if (buffer.endsWith("iZ")) {
+                } else if (buffer.endsWith("hZ")) {
                     const updatedText = currentInput.slice(0, -2) + "হ্য";
                     textBox.value = updatedText;
                     textBox.selectionStart = textBox.selectionEnd = updatedText.length;
@@ -1022,5 +1022,6 @@
     <button id="cleartext">Delete All Text</button>
     <button id="toggleButton">Show Layout</button>
     <img id="keyboardLayout" src="Images/shohoj-layout.png" alt="Unibijoy Keyboard Layout">
+    <p> Found bugs? Email to: ahmadgebdu@gmail.com</p>
 </body>
 </html>
